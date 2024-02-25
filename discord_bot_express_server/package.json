@@ -1,0 +1,23 @@
+{
+  "name": "discord_bot_express",
+  "version": "1.0.0",
+  "description": "backend for the python discord bot",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "adwait_kalsekar",
+  "license": "ISC",
+  "dependencies": {
+    "@google/generative-ai": "^0.2.1",
+    "axios": "^1.6.7",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "mongodb": "^6.3.0",
+    "openai": "^4.28.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
