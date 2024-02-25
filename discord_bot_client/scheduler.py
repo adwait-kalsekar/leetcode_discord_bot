@@ -2,6 +2,10 @@ import discord
 from discord.ext import commands, tasks
 import datetime
 import main
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Define intents
 intents = discord.Intents.default()
@@ -55,4 +59,4 @@ async def send_reminder():
     #     else: 
     #         return False
         
-bot.run('MTIxMTAwNTIzMjgwOTY0ODEzOA.G-TRTg.oLLGEAclPvSbnimwJz6r6Pmer-m4CBp8zsTtBw')
+bot.run(os.getenv('TOKEN'))

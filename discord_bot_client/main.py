@@ -5,6 +5,9 @@ import requests
 import random
 from datetime import datetime, timedelta
 import time
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Define intents
 intents = discord.Intents.default()
@@ -361,6 +364,6 @@ async def send_reminder():
   #   else: 
   #     return False
 
-client.run('MTIxMTAwNTIzMjgwOTY0ODEzOA.G-TRTg.oLLGEAclPvSbnimwJz6r6Pmer-m4CBp8zsTtBw')
+client.run(str(os.getenv('TOKEN')))
 
 
